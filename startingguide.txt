@@ -1,0 +1,40 @@
+⚙️ Installation Commands
+
+1. Create Virtual Environment (Recommended)
+cmd
+
+python -m venv venv
+venv\Scripts\activate
+
+2. Install Dependencies
+cmd
+
+pip install --upgrade pip
+pip install -r requirements.txt
+
+Or install individually:
+cmd
+
+pip install pandas scikit-learn streamlit kagglehub
+
+🚀 Running the Project
+Step 1: Train the Model (First Time Only)
+This downloads the dataset and preprocesses it:
+cmd
+
+python model.py
+Expected output:
+
+Downloads ~200MB dataset from Kaggle
+Processes ~200k+ news articles
+Creates models/ folder with processed data
+Takes 2-5 minutes depending on your system
+
+Step 2: Run the Streamlit App
+cmd
+
+streamlit run app.py
+Expected output:
+
+Opens browser automatically at http://localhost:8501
+If browser doesn't open, manually visit the URL shown in terminal
